@@ -1,0 +1,171 @@
+ body {
+    /*background-image:url(https://www.espacios.net.mx/wp-content/uploads/2023/03/encriptacion-de-datos-1024x675.jpg) ;*/  
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+}  
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+header{
+    width: 120px;
+    height: 100px;
+    font-family: cursive;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+main{ position: absolute;
+    width: 150px;
+    height: 120%;
+    display: flex;
+    justify-content: space-between;
+
+} 
+
+.contenedor_caja{
+    position: absolute;
+    left: 260px;
+    top: 180px;
+    padding-left: 120px;
+    width: 110px;
+    height: 800px;
+}
+.caja{
+    width: 350px;
+    height: 150px;
+    border: none;
+    background-color: #91eae4;
+    cursor: pointer;
+    color: #86a8e7;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: cursive;
+}
+
+.caja::placeholder{
+    color: #7f7fd5;
+}
+
+.alerta{
+    position:absolute;
+    top: 830px;
+    left: 420px;
+    display: flex;
+    color: rgb(63, 67, 67);
+}
+
+.botones{
+    position: absolute;
+    top: 950px;
+    height: 95px;
+    padding-left: 20%;
+    padding-top: 20px;
+}
+
+.b_encriptador{
+    width: 350px;
+    height: 80px;
+    border-radius: 30px;
+    background-color: #2193b0;
+    color: #6dd5ed;
+    font-size: 20px;
+    font-weight:500;
+    font-family: cursive;
+    border-color: beige;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.b_desencriptador{
+    width: 350px;
+    height: 80px;
+    border-radius: 30px;
+    background-color: #6dd5ed ;
+    color:  #2193b0;
+    font-size: 20px;
+    font-weight:500;
+    font-family: cursive;
+    border-color: beige;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.seccion2{
+    display: block;
+    position: relative;
+    width: 500px;
+    height: 1025px;
+    right: 450px;
+    padding-right: 45px;
+    background-color: #6dd5ed;
+    box-sizing: border-box;
+    border-radius: 40px;
+    box-shadow: 0px 30px 38px -10px rgba(82, 117, 188, 0.8);
+}
+
+.parrafo{
+position: absolute;
+box-sizing: border-box;
+top: 640px;
+left: 62px;
+
+}
+
+.parrafo h3{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: cursive;
+    text-align: center;
+    color: #7f7fd5;
+}
+
+.parrafo p{
+    font-family: cursive;
+    font-weight: 500;
+    text-align: center;
+    color: #2193b0;
+    padding-top: 35px;
+}
+
+.resultado{
+    position: absolute;
+    bottom: 480px;
+    width: 380px;
+    height: 500px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+.resultado p{
+    color: beige;
+    font-size: 28px;
+
+}
+
+.copia{
+display: flex;
+position: absolute;
+bottom: 500px;
+top: 750px;
+background-color: #6dd5ed;
+padding-left: 50px;
+}
+
+b_copiar{
+    width: 335px;
+    height: 75px;
+    border-radius: 30px;
+    background-color: bisque;
+    color: #91eae4;
+    font-size: 24px;
+    font-family: cursive;
+    border: 2px solid #2193b0;
+    cursor: pointer;
+    position: relative;
+    top: 150px;
+    right: 8px;
+}
