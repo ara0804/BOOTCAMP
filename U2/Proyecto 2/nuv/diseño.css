@@ -1,6 +1,7 @@
- body {
-    /*background-image:url(https://www.espacios.net.mx/wp-content/uploads/2023/03/encriptacion-de-datos-1024x675.jpg) ;*/  
+body {
+    
     background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    
 }  
 
 * {
@@ -8,6 +9,14 @@
     padding: 0;
     font-family: cursive;
 }
+main{
+    position: absolute;
+    width: 1050px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+
+} 
 header{
     width: 120px;
     height: 100px;
@@ -17,57 +26,71 @@ header{
     padding-left: 50px;
 }
 
-main{ position: absolute;
-    width: 150px;
-    height: 120%;
-    display: flex;
-    justify-content: space-between;
-
-} 
-
-.contenedor_caja{
-    position: absolute;
-    left: 260px;
-    top: 180px;
-    padding-left: 120px;
-    width: 110px;
-    height: 800px;
+.seccion{
+    position: relative;
+    justify-content: flex-end;
+    
 }
+.seccion2{
+
+    width: 330px;
+    height: 175px;
+    right: 250px;
+    padding-right: 45px;
+    background-color: #6dd5ed;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 30px 38px -10px rgba(82, 117, 188, 0.8);
+}
+
+.resultado{
+    bottom: 480px;
+    width: 380px;
+    height: 500px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
 .caja{
     width: 350px;
     height: 150px;
-    border: none;
-    background-color: #91eae4;
+    border-color: black;
+    background-color: #86a8e7;
     cursor: pointer;
-    color: #86a8e7;
+    color: #0c1f3a;
     font-size: 40px;
     font-weight: 500;
     font-family: cursive;
 }
 
 .caja::placeholder{
-    color: #7f7fd5;
+    color: #111131;
 }
 
 .alerta{
-    position:absolute;
-    top: 830px;
-    left: 420px;
-    display: flex;
-    color: rgb(63, 67, 67);
+    
+    top: 10px;
+    left: 10px;
+    right: 30px;
+    left: 30px;
+    display: flex-start;
+    color: rgb(33, 37, 37);
+    border-radius: 10px;
 }
 
 .botones{
-    position: absolute;
-    top: 950px;
+    justify-content: flex-start;
+    flex-direction: row;
+    top: 250px;
     height: 95px;
-    padding-left: 20%;
+    padding-left: 15%;
     padding-top: 20px;
 }
 
 .b_encriptador{
-    width: 350px;
-    height: 80px;
+    width: 250px;
+    height: 50px;
     border-radius: 30px;
     background-color: #2193b0;
     color: #6dd5ed;
@@ -80,8 +103,8 @@ main{ position: absolute;
 }
 
 .b_desencriptador{
-    width: 350px;
-    height: 80px;
+    width: 250px;
+    height: 50px;
     border-radius: 30px;
     background-color: #6dd5ed ;
     color:  #2193b0;
@@ -93,79 +116,23 @@ main{ position: absolute;
     cursor: pointer;
 }
 
-.seccion2{
-    display: block;
-    position: relative;
-    width: 500px;
-    height: 1025px;
-    right: 450px;
-    padding-right: 45px;
-    background-color: #6dd5ed;
-    box-sizing: border-box;
-    border-radius: 40px;
-    box-shadow: 0px 30px 38px -10px rgba(82, 117, 188, 0.8);
-}
-
-.parrafo{
-position: absolute;
-box-sizing: border-box;
-top: 640px;
-left: 62px;
-
-}
-
-.parrafo h3{
-    font-size: 30px;
-    font-weight: 800;
+.b_copiar{
+    width: 90px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #386d98;
+    color: #91eae4;
+    font-size: 20px;
     font-family: cursive;
-    text-align: center;
-    color: #7f7fd5;
+    border: 2px solid #102c33;
+    cursor: pointer;
 }
-
-.parrafo p{
-    font-family: cursive;
-    font-weight: 500;
-    text-align: center;
-    color: #2193b0;
-    padding-top: 35px;
-}
-
 .resultado{
-    position: absolute;
-    bottom: 480px;
-    width: 380px;
-    height: 500px;
+
+   
+    width: 100px;
+    height: 35px;
     padding: 0;
     box-sizing: border-box;
-    margin-left: 30px;
-}
-
-.resultado p{
-    color: beige;
-    font-size: 28px;
-
-}
-
-.copia{
-display: flex;
-position: absolute;
-bottom: 500px;
-top: 750px;
-background-color: #6dd5ed;
-padding-left: 50px;
-}
-
-b_copiar{
-    width: 335px;
-    height: 75px;
-    border-radius: 30px;
-    background-color: bisque;
-    color: #91eae4;
-    font-size: 24px;
-    font-family: cursive;
-    border: 2px solid #2193b0;
-    cursor: pointer;
-    position: relative;
-    top: 150px;
-    right: 8px;
+    border-radius: 10px;
 }
